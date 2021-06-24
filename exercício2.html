@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+    <style>
+        .laranja{
+            width: 90px;
+            height: 90px;
+            background-color: orangered;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            display: flex;
+        }
+
+        .verde{
+            width: 190px;
+            height: 50px;
+            background-color: lime;
+            margin-bottom: 10px;
+        }
+
+        .azul{
+            width: 390px;
+            height: 80px;
+            background-color: blue;
+            margin-bottom: 10px;
+        }
+
+        .amarelo{
+            width: 390px;
+            height: 200px;
+            background-color: yellow;
+            margin-bottom: 10px;
+        }
+
+        .corpo{
+            margin-top: 200px;
+            margin-left: 35%;
+            display: flex;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        @media screen and (max-width: 480px){
+        .laranja{
+            width: 190px;
+            height: 195px;
+            display: flex;
+        }
+
+        .verde{
+            width: 390px;
+            margin-bottom: 10px;
+        }
+
+        #visible{
+            display: none;
+        }
+
+        .corpo{
+            display: initial;
+            margin: auto;
+        }
+ 
+    }
+          
+    </style>
+</head>
+<body>
+    <div class="corpo">
+        <section>
+            <div class="container" id="visible">
+                <div class="laranja"></div>
+                <div class="laranja"></div>
+            </div>
+            <div class="container" id="visible">
+                <div class="laranja"></div>
+                <div class="laranja"></div>
+            </div>
+        
+            <div class="verde"></div>
+            <div class="verde"></div>
+
+            <div class="container">
+                <div class="laranja"></div>
+                <div class="laranja"></div>
+            </div>
+
+            <div class="verde"></div>
+        </section>
+
+        <section>
+            <div class="azul"></div>
+            <div class="amarelo"></div>
+            <div class="azul"></div>
+            <div class="azul" id="visible"></div>
+        </section>
+    </div>
+
+</body>
+</html>
